@@ -20,13 +20,13 @@ namespace ScottProblem
 
             int length = 6;
 
-            while (length < 6)
+          
             {
                 for (int i = 0; i < length; i++)
                 {
                     if (foo[i] >= 9)
                     {
-                        foo.Add(i + 1);
+                        foo[i] = i++;
                     }
 
                     else
