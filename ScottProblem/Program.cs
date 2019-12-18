@@ -24,9 +24,9 @@ namespace ScottProblem
             {
                 for (int i = 0; i < length; i++)
                 {
-                    if (foo[i] >= 9)
+                    if (foo[i] > 9)
                     {
-                        foo[i] = i++;
+                        foo[i] = i + 8;
                     }
 
                     else
@@ -39,7 +39,7 @@ namespace ScottProblem
 
             foreach (var item in foo)
             {
-                Console.WriteLine(item);
+                Console.Write(item + ", ");
             }
         }
     }
